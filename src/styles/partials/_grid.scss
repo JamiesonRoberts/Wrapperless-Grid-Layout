@@ -17,6 +17,7 @@ $desktop: layout(60em 16);
 	margin: 0;
 	padding: 0;
 	border: 0;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -54,25 +55,19 @@ header, footer {
 main {
 	@include container;
 	& > * {
-		padding-top: 3em;
-		padding-bottom: 3em;
+		padding-top: 1em;
+		padding-bottom: 1em;
 	}
 	@include susy-breakpoint(45em, 8) {
 		@include container;
-		& > *:first-child {
-			@include prefix(1);
-		}
-		& > *:last-child {
-			@include suffix(1);
+		& > * {
+			@include pad(1);
 		}
 	}
 	@include susy-breakpoint(60em, 16) {
 		@include container;
-		& > *:first-child {
-			@include prefix(3);
-		}
-		& > *:last-child {
-			@include suffix(3);
+		& > * {
+			@include pad(3);
 		}
 	}
 }
