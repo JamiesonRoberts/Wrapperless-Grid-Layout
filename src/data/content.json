@@ -1,0 +1,45 @@
+ {
+ 	"index" : {
+ 		"class": "homepage",
+ 		"content": {
+		 	"s1" : [
+				{
+					"tag" : "h1",
+					"content": "Introducing Ourcane"
+				},
+				{
+					"tag" : "blockquote",
+					"content": "We sell more for our clients"
+				},
+				{ 
+					"tag" : "p",
+					"content" : "We lead with innovation, creativity, and conscience on our mission to change the perception of the marketing industry."
+				}
+			],
+		 	"s2" : [
+				{
+					"tag" : "h2",
+					"content": "Getting Started"
+				},
+				{
+					"tag" : "blockquote",
+					"content": "After you've installed"
+				},
+				{ 
+					"tag" : "p",
+					"content" : "Run <code>gulp watch</code>"
+				},
+				{ 
+					"tag" : "p",
+					"content" : "Start coding"
+				}
+			],
+			"s3": [
+				{
+					"tag" :"p",
+					"content": "Arcane is a descriptor that signifies something known or understood only by a few. This accurately defines and underpins our brand values and how we operate as a business."
+				}
+			]	
+ 		}
+ 	}
+}

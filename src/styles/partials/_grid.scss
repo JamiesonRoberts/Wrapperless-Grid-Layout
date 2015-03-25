@@ -1,0 +1,53 @@
+$susy: (
+	gutter: 100%/18,
+	gutter-position: after,
+	debug: (
+	    image: show,
+	    color: rgba(23,86,140, 0.2),
+	    output: background,
+	    toggle: top right,
+  	),
+);
+
+$phone: layout(auto 4);
+$tablet: layout(720px 8);
+$desktop: layout(60em 16);
+
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html, body {
+	font-size: $fontbaseline;
+}
+
+
+header, main, footer {
+	@include container;
+	@include susy-breakpoint(720px, 8) {
+		@include container;
+		& > *:first-child {
+			@include prefix(1);
+		}
+		& > *:last-child {
+			@include suffix(1);
+		}
+	}
+	@include susy-breakpoint(960px, 16) {
+		@include container;
+		& > *:first-child {
+			@include prefix(3);
+		}
+		& > *:last-child {
+			@include suffix(3);
+		}
+		h1 {
+			@include span(2 of 16);
+		}
+		nav {
+			@include span(8 of 16 last);
+		}
+	}
+}

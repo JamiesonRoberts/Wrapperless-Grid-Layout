@@ -1,0 +1,14 @@
+{
+  "name": "Ourcane",
+  "version": "0.7.2",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "devDependencies": {
+    "susy": "*",
+    "font-awesome": "*",
+    "fastclick": "*",
+    "jquery": "^1.11.1"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Ourcane",
+  "description": "Node package file for Ourcane",
+  "version": "0.7.8",
+  "repository": {
+    "type": "svn",
+    "url": "https://bitbucket.org/arcanedigital/generator-ourcane"
+  },
+  "dependencies": {
+    "bower": "^1.3.12",
+    "browserify": "^9.0.3",
+    "debowerify": "^1.2.0",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-cached": "^1.0.2",
+    "gulp-ftp": "^1.0.3",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jshint": "^1.9.2",
+    "gulp-minify-css": "^0.4.6",
+    "gulp-newer": "^0.5.0",
+    "gulp-prompt": "^0.1.2",
+    "gulp-remember": "^0.3.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^1.0.0-alpha.3",
+    "gulp-streamify": "*",
+    "gulp-tap": "^0.1.3",
+    "gulp-template": "^3.0.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.4",
+    "gulp-watch": "^4.1.1",
+    "jshint-stylish": "^1.0.1",
+    "node-dir": "^0.1.6",
+    "node-notifier": "^4.1.2",
+    "q": "^1.2.0",
+    "require-dir": "^0.1.0",
+    "underscore-node": "^0.1.2",
+    "vinyl": "^0.4.6",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0",
+    "vinyl-transform": "^1.0.0",
+    "watchify": "^2.4.0"
+  }
+}
