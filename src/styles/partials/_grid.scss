@@ -45,10 +45,10 @@ header, footer {
 			@include suffix(3);
 		}
 		h1 {
-			@include span(2 of 16);
+			@include span(2+3 of 16);
 		}
 		nav {
-			@include span(8 of 16 last);
+			@include span(8+3 of 16 last);
 		}
 	}
 }
