@@ -35,6 +35,12 @@ header, footer {
 		& > *:last-child {
 			@include suffix(1);
 		}
+		h1 {
+			@include span(1+1 of 8);
+		}
+		nav {
+			@include span(5+1 of 8 last);
+		}
 	}
 	@include susy-breakpoint(60em, 16) {
 		@include container;
