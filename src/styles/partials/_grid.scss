@@ -9,6 +9,8 @@ $susy: (
   	),
 );
 
+$largeGrid: 16;
+
 $phone: layout(auto 4);
 $tablet: layout(45em 8);
 $desktop: layout(60em 16);
@@ -22,12 +24,14 @@ $desktop: layout(60em 16);
 
 html, body {
 	font-size: $fontbaseline;
+	width: 100%;
+	min-width: 100%;
 }
 
 
 header, footer {
 	@include container;
-	@include susy-breakpoint(45em, 8) {
+	@include susy-breakpoint(45em, $largeGrid*0.5) {
 		@include container;
 		& > *:first-child {
 			@include prefix(1);
@@ -36,13 +40,13 @@ header, footer {
 			@include suffix(1);
 		}
 		h1 {
-			@include span(1+1 of 8);
+			@include span(1+1 of $largeGrid*0.5);
 		}
 		nav {
-			@include span(5+1 of 8 last);
+			@include span(5+1 of $largeGrid*0.5 last);
 		}
 	}
-	@include susy-breakpoint(60em, 16) {
+	@include susy-breakpoint(60em, $largeGrid) {
 		@include container;
 		& > *:first-child {
 			@include prefix(3);
@@ -51,14 +55,15 @@ header, footer {
 			@include suffix(3);
 		}
 		h1 {
-			@include span(2+3 of 16);
+			@include span(2+3 of $largeGrid);
 		}
 		nav {
-			@include span(8+3 of 16 last);
+			@include span(8+3 of $largeGrid last);
 		}
 	}
 }
 main {
+	background-color: red;
 	@include container;
 	& > * {
 		padding-top: 1em;
