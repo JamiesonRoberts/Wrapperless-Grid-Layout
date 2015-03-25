@@ -10,7 +10,7 @@ $susy: (
 );
 
 $phone: layout(auto 4);
-$tablet: layout(720px 8);
+$tablet: layout(45em 8);
 $desktop: layout(60em 16);
 
 *, *:before, *:after {
@@ -26,7 +26,7 @@ html, body {
 
 header, main, footer {
 	@include container;
-	@include susy-breakpoint(720px, 8) {
+	@include susy-breakpoint(45em, 8) {
 		@include container;
 		& > *:first-child {
 			@include prefix(1);
@@ -35,7 +35,7 @@ header, main, footer {
 			@include suffix(1);
 		}
 	}
-	@include susy-breakpoint(960px, 16) {
+	@include susy-breakpoint(60em, 16) {
 		@include container;
 		& > *:first-child {
 			@include prefix(3);
