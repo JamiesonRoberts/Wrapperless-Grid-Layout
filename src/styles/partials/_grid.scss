@@ -24,7 +24,7 @@ html, body {
 }
 
 
-header, main, footer {
+header, footer {
 	@include container;
 	@include susy-breakpoint(45em, 8) {
 		@include container;
@@ -48,6 +48,31 @@ header, main, footer {
 		}
 		nav {
 			@include span(8 of 16 last);
+		}
+	}
+}
+main {
+	@include container;
+	& > * {
+		padding-top: 3em;
+		padding-bottom: 3em;
+	}
+	@include susy-breakpoint(45em, 8) {
+		@include container;
+		& > *:first-child {
+			@include prefix(1);
+		}
+		& > *:last-child {
+			@include suffix(1);
+		}
+	}
+	@include susy-breakpoint(60em, 16) {
+		@include container;
+		& > *:first-child {
+			@include prefix(3);
+		}
+		& > *:last-child {
+			@include suffix(3);
 		}
 	}
 }
