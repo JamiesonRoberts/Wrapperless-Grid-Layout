@@ -2,8 +2,10 @@
 module.exports = function (gulp, plugins, config) {
  	var deferred = plugins.Q.defer();
  	
+	gulp.src(config.source.scripts + '/legacy.js').pipe(gulp.dest(config.ap + '/js'));
+    
  	var b = plugins.browserify(plugins.watchify.args)
-		.add('./src/scripts/app.js')
+		.add('./'+config.source.scripts + '/app.js')
 		.transform(plugins.debowerify)
 		.bundle()
 		.pipe(plugins.source('app.js'))
