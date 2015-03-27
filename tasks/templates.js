@@ -50,20 +50,20 @@ module.exports = function (gulp, plugins, config) {
 
             var tagAttributes = ' ';
             if(tags[c].tag == 'a') {
-              tagAttributes = 'href="'+ t.linkPath + tags[c].href + '" ';
+              tagAttributes += ' href="'+ t.linkPath + tags[c].href + '" ';
             } else if(tags[c].tag == 'img') {
               if (!/^(f|ht)tps?:\/\//i.test(tags[c].src)) {
                 var srcPath = t.imagePath + '/' + tags[c].src;
               } else {
                 var srcPath = tags[c].src;
               }
-              tagAttributes = 'src="'+ srcPath + '" ';
+              tagAttributes += ' src="'+ srcPath + '" ';
             }
             if (tags[c].class) {
-              tagAttributes = 'class="'+ tags[c].class + '" ';
+              tagAttributes += ' class="'+ tags[c].class + '" ';
             }
             if (tags[c].id) {
-              tagAttributes = 'id="'+ tags[c].id + '" ';
+              tagAttributes += ' id="'+ tags[c].id + '" ';
             }
             if(tags[c].tag == 'img') {
               var tag = '<' + tags[c].tag + ' ' + tagAttributes + ' alt="' + tags[c].alt + '"" />';
