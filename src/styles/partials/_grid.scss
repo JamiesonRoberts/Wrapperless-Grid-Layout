@@ -1,6 +1,9 @@
+$largeGrid: 16;
+
 $susy: (
 	gutter: 100%/18,
 	gutter-position: after,
+	columns: $largeGrid,
 	debug: (
 	    image: show,
 	    color: rgba(23,86,140, 0.2),
@@ -9,11 +12,7 @@ $susy: (
   	),
 );
 
-$largeGrid: 16;
 
-$phone: layout(auto 4);
-$tablet: layout(45em 8);
-$desktop: layout(60em 16);
 
 *, *:before, *:after {
 	margin: 0;
