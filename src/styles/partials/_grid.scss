@@ -75,7 +75,6 @@ header, footer {
 	}
 }
 main {
-	background-color: red;
 	@include container;
 	& > * {
 		padding-top: 1em;
