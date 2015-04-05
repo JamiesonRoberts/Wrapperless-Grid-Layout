@@ -10,7 +10,11 @@ This is currently still in its alpha stages, and while I'm comfortable using it 
 
 Primary Contributor [@jamiesonroberts](//twitter.com/jamiesonroberts "Jamieson Roberts on Twitter")
 
-## The MIT License (MIT)
+## Attribution 
+
+A lot of the ideas behind this are thanks to numerous articles that I have read over the past couple of years. I will attempted to document them as much as possible and put links to the various different authors that have helped me come to this idea and build it out. If you appear on here and for whatever reason don't want to be linked, please <a href="mailto:hello@jamiesonroberts.ca">contact me</a> and let me know.
+
+### The MIT License (MIT)
 
 Copyright (c) 2015 Jamieson Roberts
 
