@@ -6,6 +6,12 @@ Working towards a better solution for semantically correct HTML as well as a non
 
 This is currently still in its **alpha stages**, and while I'm comfortable using it on productions site, it is not meant for wide-spread usage at this time. Consider yourself warned!
 
+As of tag 0.2.3 this is built using Susy to handle the math. I'm starting to build it out using SASS and not relying on a calculation framework. Please check the develop branch to see where its at. On that note, please read the file structure section.
+
+## File Structure
+
+**Please Note** The content that you see in the master branch will always be working code. I do all of my development work in the develop branch or branch off of it and then work back to the master. If you want to see what I'm working on please look at the develop branch. If you want to use it in anything close to a production environment, use the master.
+
 ## Contributors
 
 [@jamiesonroberts](//twitter.com/jamiesonroberts "Jamieson Roberts on Twitter")
