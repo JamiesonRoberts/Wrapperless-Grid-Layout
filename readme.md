@@ -4,11 +4,11 @@ Working towards a better solution for semantically correct HTML as well as a non
 
 ## Please Note
 
-This is currently still in its alpha stages, and while I'm comfortable using it on productions site, it is not meant for wide-spread usage at this time. Consider yourself warned!
+This is currently still in its **alpha stages**, and while I'm comfortable using it on productions site, it is not meant for wide-spread usage at this time. Consider yourself warned!
 
 ## Contributors
 
-Primary Contributor [@jamiesonroberts](//twitter.com/jamiesonroberts "Jamieson Roberts on Twitter")
+[@jamiesonroberts](//twitter.com/jamiesonroberts "Jamieson Roberts on Twitter")
 
 ## Attribution 
 
