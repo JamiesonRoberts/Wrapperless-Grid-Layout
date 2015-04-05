@@ -1,14 +1,18 @@
-## Ourcane
+# Wrapperless Grid Layout
 
-A site created usign the Ourcane Generator.
+Working towards a better solution for semantically correct HTML as well as a non-intrusive grid layout and zoomable baseline
+
+## Please Note
+
+This is currently still in its alpha stages, and while I'm comfortable using it on productions site, it is not meant for wide-spread usage at this time. Consider yourself warned!
 
 ## Contributors
 
-Development team at @arcanebrand
+Primary Contributor @jamiesonroberts
 
 ## The MIT License (MIT)
 
-Copyright (c) 2015 Arcane Digital Inc
+Copyright (c) 2015 Jamieson Roberts
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
