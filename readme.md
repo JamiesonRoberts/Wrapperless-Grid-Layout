@@ -8,7 +8,7 @@ This is currently still in its alpha stages, and while I'm comfortable using it 
 
 ## Contributors
 
-Primary Contributor @jamiesonroberts
+Primary Contributor [@jamiesonroberts on twitter](//twitter.com/jamiesonroberts "Jamieson Roberts on Twitter")
 
 ## The MIT License (MIT)
 
