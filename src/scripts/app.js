@@ -1,7 +1,11 @@
-var $ = jQuery  = require('jquery');
 
-$(function() {
+
+(function($) {
+
+})(jQuery);
+
+// $(function() {
 	
 	
-});
+// });
 

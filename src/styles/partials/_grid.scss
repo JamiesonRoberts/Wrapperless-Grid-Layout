@@ -1,95 +1,99 @@
 $largeGrid: 16;
 
-$susy: (
-	gutter: 100%/18,
-	gutter-position: after,
-	columns: $largeGrid,
-	debug: (
-	    image: show,
-	    color: rgba(23,86,140, 0.2),
-	    output: background,
-	    toggle: top right,
-  	),
-);
 
-
-
-*, *:before, *:after {
-	margin: 0;
-	padding: 0;
+* {
 	border: 0;
-	box-sizing: border-box;
 }
+// $susy: (
+// 	gutter: 100%/18,
+// 	gutter-position: after,
+// 	columns: $largeGrid,
+// 	debug: (
+// 	    image: show,
+// 	    color: rgba(23,86,140, 0.2),
+// 	    output: background,
+// 	    toggle: top right,
+//   	),
+// );
 
-html, body {
-	font-size: $fontbaseline;
-	width: 100%;
-	min-width: 100%;
-}
 
 
-header, footer {
-	@include container;
-	& > *:first-child {
-		@include prefix(100%/18);
-	}
-	& > *:last-child {
-		@include suffix(100%/18);
-	}
-	h1 {
-		@include span(1 of $largeGrid*0.25);
-	}
-	nav {
-		@include span(3 of $largeGrid*0.25 last)
-	}
-	@include susy-breakpoint(45em, $largeGrid*0.5) {
-		@include container;
-		& > *:first-child {
-			@include prefix(1);
-		}
-		& > *:last-child {
-			@include suffix(1);
-		}
-		h1 {
-			@include span(1+1 of $largeGrid*0.5);
-		}
-		nav {
-			@include span(5+1 of $largeGrid*0.5 last);
-		}
-	}
-	@include susy-breakpoint(60em, $largeGrid) {
-		@include container;
-		& > *:first-child {
-			@include prefix(3);
-		}
-		& > *:last-child {
-			@include suffix(3);
-		}
-		h1 {
-			@include span(2+3 of $largeGrid);
-		}
-		nav {
-			@include span(8+3 of $largeGrid last);
-		}
-	}
-}
-main {
-	@include container;
-	& > * {
-		padding-top: 1em;
-		padding-bottom: 1em;
-		@include pad(100%/18);
-	}
-	@include susy-breakpoint(45em, 8) {
-		@include container;
-		& > * {
-			@include pad(1);
-		}
-	}
-	@include susy-breakpoint(60em, 16) {
-		@include container;
-		& > * {
-			@include pad(3);
-		}
-	}
-}
+// *, *:before, *:after {
+// 	margin: 0;
+// 	padding: 0;
+// 	border: 0;
+// 	box-sizing: border-box;
+// }
+
+// html, body {
+// 	font-size: $fontbaseline;
+// 	width: 100%;
+// 	min-width: 100%;
+// }
+
+
+// header, footer {
+// 	@include container;
+// 	& > *:first-child {
+// 		@include prefix(100%/18);
+// 	}
+// 	& > *:last-child {
+// 		@include suffix(100%/18);
+// 	}
+// 	h1 {
+// 		@include span(1 of $largeGrid*0.25);
+// 	}
+// 	nav {
+// 		@include span(3 of $largeGrid*0.25 last)
+// 	}
+// 	@include susy-breakpoint(45em, $largeGrid*0.5) {
+// 		@include container;
+// 		& > *:first-child {
+// 			@include prefix(1);
+// 		}
+// 		& > *:last-child {
+// 			@include suffix(1);
+// 		}
+// 		h1 {
+// 			@include span(1+1 of $largeGrid*0.5);
+// 		}
+// 		nav {
+// 			@include span(5+1 of $largeGrid*0.5 last);
+// 		}
+// 	}
+// 	@include susy-breakpoint(60em, $largeGrid) {
+// 		@include container;
+// 		& > *:first-child {
+// 			@include prefix(3);
+// 		}
+// 		& > *:last-child {
+// 			@include suffix(3);
+// 		}
+// 		h1 {
+// 			@include span(2+3 of $largeGrid);
+// 		}
+// 		nav {
+// 			@include span(8+3 of $largeGrid last);
+// 		}
+// 	}
+// }
+// main {
+// 	@include container;
+// 	& > * {
+// 		padding-top: 1em;
+// 		padding-bottom: 1em;
+// 		@include pad(100%/18);
+// 	}
+// 	@include susy-breakpoint(45em, 8) {
+// 		@include container;
+// 		& > * {
+// 			@include pad(1);
+// 		}
+// 	}
+// 	@include susy-breakpoint(60em, 16) {
+// 		@include container;
+// 		& > * {
+// 			@include pad(3);
+// 		}
+// 	}
+// }
