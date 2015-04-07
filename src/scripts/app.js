@@ -1,11 +1,7 @@
 
 
 (function($) {
-
+	var foo = "bar";
 })(jQuery);
 
-// $(function() {
-	
-	
-// });
 

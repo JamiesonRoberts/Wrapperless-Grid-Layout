@@ -1,47 +1,10 @@
-//----------------------------------*\
-// BOWER IMPORTS
-//----------------------------------*/
-
-
-//----------------------------------*\
-// VENDOR
-//----------------------------------*/
-
-
-
-//----------------------------------*\
-// SCSS MIXINS
-//----------------------------------*/
-
-
-
-//----------------------------------*\
-// CONFIG MODULES
-//----------------------------------*/
-
-// Config modules
-@import "modules/variables";
-@import "modules/typography";
-
-//----------------------------------*\
-// OBJECTS
-//----------------------------------*/
-
-@import "modules/clickables";
-@import "modules/forms";
-@import "modules/navigation";
-
-//----------------------------------*\
-// PARTIALS
-//----------------------------------*/
-
+// Wrapperless Grid
 @import "partials/grid";
+
+
+// Making it pretty
 @import "partials/header";
 @import "partials/segments";
 @import "partials/footer";
 
-//----------------------------------*\
-// MODULES
-//----------------------------------*/
 
-@import "modules/print";

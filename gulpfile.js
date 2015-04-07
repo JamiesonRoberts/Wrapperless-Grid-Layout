@@ -13,13 +13,14 @@ gulp.task('init', ['lint', 'style', 'scripts', 'watch']);
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('js/*.js', ['lint', 'scripts']);
-    gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch('src/scripts/**/*', ['lint', 'scripts']);
+    gulp.watch('src/styles/**/*', ['style']);
+    // gulp.watch('src/templates/**/*', ['template']);
 });
 
 // Lint Task
 gulp.task('lint', function() {
-    return gulp.src('js/*.js')
+    return gulp.src('src/scripts/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('default'));
 });
@@ -33,11 +34,16 @@ gulp.task('style', function() {
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-    return gulp.src('js/*.js')
-        .pipe(concat('all.js'))
-        .pipe(gulp.dest('dist'))
-        .pipe(rename('all.min.js'))
+    return gulp.src('src/scripts/*.js')
+        .pipe(concat('app.js'))
+        .pipe(gulp.dest('public/assests/scripts'))
+        .pipe(rename('app.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('dist'));
+        .pipe(gulp.dest('public/assests/scripts'));
+});
+
+// Move Templates
+gulp.task('template', function() {
+	return gulp.src('src/templates/**/*');
 });
 
